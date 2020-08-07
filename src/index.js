@@ -1,13 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/index.css';
+import App from './Router/App';
+import Login from './Router/Login';
+import Register from './Router/Register';
 import * as serviceWorker from './serviceWorker';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 
 ReactDOM.render(
+  /*
   <React.StrictMode>
     <App />
+    <Login />
   </React.StrictMode>,
+  */
+  <Router>
+    <Route path="/" exact component={App}>
+
+    </Route>
+    <Route path="/login" exact component={Login}>
+
+    </Route>
+    <Route path="/register" exact component={Register}>
+
+    </Route>
+
+  </Router>,
+  
   document.getElementById('root')
 );
 
