@@ -14,7 +14,7 @@ function Login() {
           
           <input placeholder="Password" type="password" id="inputPassword" className="form-control mb-2" required/>
 
-          <p className="registerLogin">Not Registered?  <a href="/register" textDecoration="none">Register</a></p>
+          <p className="registerLogin">Not Registered?  <a href="/#/register" textDecoration="none">Register</a></p>
 
           <button className="btn btn-lg btn-primary btn-block mt-2" type="submit">
             Login

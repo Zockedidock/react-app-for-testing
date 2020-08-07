@@ -14,7 +14,7 @@ function Register() {
           
           <input placeholder="Password" type="password" id="inputPasswordRegister" className="form-control mb-2" required/>
 
-          <p className="registerLogin">Already registered?  <a href="/login" textDecoration="none">Login</a></p>
+          <p className="registerLogin">Already registered?  <a href="/#/login" textDecoration="none">Login</a></p>
 
           <button className="btn btn-lg btn-primary btn-block mt-2" type="submit">
             Register

@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import App from './Router/App';
-import Login from './Router/Login';
-import Register from './Router/Register';
+import App from './App';
+//import Home from './Router/Home'
+//import Login from './Router/Login';
+//import Register from './Router/Register';
 import * as serviceWorker from './serviceWorker';
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   /*
@@ -16,7 +14,7 @@ ReactDOM.render(
     <App />
     <Login />
   </React.StrictMode>,
-  */
+  
   <Router>
     <Route path="/" component={App}>
 
@@ -28,7 +26,12 @@ ReactDOM.render(
 
     </Route>
 
-  </Router>,
+  </Router>
+  */
+  <HashRouter>
+    <App />
+  </HashRouter>
+  ,
   
   document.getElementById('root')
 );
